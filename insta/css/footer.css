@@ -1,0 +1,26 @@
+footer {
+    margin-top:20px;
+    padding : 65px 100px 35px 100px;
+    display : flex;
+    justify-content: space-between;
+}
+.footer-left{
+    display : flex;
+    margin-left : 20px;
+}
+.footer-font{
+    display : inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration : none;
+    color : #00376B;
+    margin : 0 10px;
+}
+.footer-right{
+    margin-right : 20px;
+}
+.footer-copyright{
+    font-size: 12px;
+    font-weight: 700;
+    color : rgb(160, 160, 160);
+}

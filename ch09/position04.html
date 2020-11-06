@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            position : relative;
+        }
+        .box1{
+            position : relative;
+           width:300px;
+           height:300px;
+           background-color: yellow; 
+           display: inline-block;
+        }
+        .box2{
+            position : absolute; /* 새로운 도화지가 한장 더 생긴다 위로 온다*/
+            top : 50px;
+            left : 50px;
+           width:200px;
+           height:200px;
+           background-color: red; 
+           display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    노란색 박스가 움직이면 빨간색 박스도 같이 움직인다.
+<div class="box1">
+    <div class="box2"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <input id = "n1" type = "text" value = "3"/>
+    <input  id = "n2" type = "text" value = "4"/>
+    <button onclick = "add()">더하기</button>
+    <hr/>
+    <div>
+        <span>합 : </span>
+        <span id = "s1"></span>
+    </div>
+    <script>
+        function add(){
+            var n1El = document.querySelector("#n1");
+            console.log(n1El.value);
+
+            var n2El = document.querySelector("#n2");
+            console.log(n2El.value);
+
+            var sum = Number(n1El.value) + Number(n2El.value);
+
+            var s1E1 = document.querySelector("#s1");
+            s1.innerHTML = sum;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+body{
+    margin : 50px 15px;
+    background-color: #FAFAFC;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.main-title{
+    margin-bottom: 5px;;
+    font-size : 24px;
+    font-weight: 900;
+}
+.sub-title{
+    font-size : 13px;
+}
+.head-icon{
+    display : flex;
+}
+.icon-div{
+    margin-left: 7px;
+}
+.top-main{
+    margin : 30px 0;
+    height : 320px;
+    width : 1393px;
+}
+.background-div{
+    position: relative;
+    overflow: hidden;
+    width : 1393px;
+    height : 320px;
+    border-radius: 10px;
+    
+}
+.main-img{ 
+    position: absolute;
+    top : -760px;
+    width : 1393px;
+    border-radius: 10px;
+}
+.background-sub{
+    position: absolute;
+    overflow: visible;
+    top : 380px;
+    left: 10%;
+    margin: 0 auto;
+    padding: 7px 13px;
+    width : 1185px;;
+    height : 120px;
+    background-color: #ffffff;
+    z-index : 3;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(155, 155, 155);
+}
+.background-title{
+    font-size : 17px;
+    font-weight: 900;
+    padding-bottom : 8px;
+}
+.background-content{
+    font-size : 12px;
+    font-weight: 500;
+    padding-bottom : 12px;
+}
+.background-icon{
+    display : flex;
+    padding-top : 10px;
+    justify-content: space-evenly;
+}
+.background-icon-unit{
+    position: relative;
+    top : -5px;
+    font-size: 11px;;
+}
+.material-icons{
+    position: relative;
+    top : 7px;
+}
+.bottom-main{
+    margin-top : 90px;
+}
+.recommended-seeAll{
+    display : flex;
+    justify-content: space-between;
+}
+.recommended{
+    font-weight: 900;
+    font-size: 17px;;
+    margin-bottom : 15px;
+}
+.seeAll{
+    color : gray;
+    font-size: 11px;
+}
+.recom{
+    display : flex;
+    justify-content: space-between;
+}
+.recom-main{
+    height : 120px;
+    width : 330px;
+    
+}
+.recom-div{
+    height : 90px;
+    width : 330px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+.recom-img{
+    position: relative;
+    top : -150px;
+    width : 330px;
+    border-radius: 20px 20px 0 0;
+}
+.recom-text{
+    display : flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+.recom-main-text{
+    font-weight: 900;
+}
+.recom-sub-text{
+    color : gray;
+}

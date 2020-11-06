@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>날 사라지게 해봐요</h1>
+    <h2>다시 불러볼께요</h2>
+    <script>
+        $("h1").click(function(){
+            $("h1").fadeOut();//   1/1000초
+        });
+        $("h2").click(function(){
+            $("h1").fadeIn();//   1/1000초
+        });
+    </script>
+</body>
+</html>
