@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    padding: 75px 17%;
+    background-color: #FAFAFA;
+}
+
+h4{
+    cursor: pointer;
+}
+
+.time-text{
+    color: #b9b8b8;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.twitter-text{
+    color: #b9b8b8;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.pd0{
+    padding: 0px;
+}
+
+.pd-t60{
+    padding-top: 60px;
+}
+
+.pr50{
+    padding-right: 50px;
+}
+
+.fw700{
+    font-weight: 700;
+}
+

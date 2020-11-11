@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>text(), html(), val()</h1>
+        <hr/>
+    <div id = "text1">텍스트 공간</div>
+    <div id = "html1">HTML 공간</div>
+    <input type = "text" value = "love" id = "input1" readonly/>
+    <button onclick="change3()">INPUT 값 변경</button>
+    <button onclick="change1()">텍스트 공간 변경</button>
+    <button onclick="change2()">HTML 공간 변경</button>
+    
+    <script>
+        function change3(){
+            $("#input1").val("부산진구 중앙대로");
+            console.log($("input".val()));
+        }
+        function change1(){
+            // set
+            $("#text1").text("<h1>텍스트 내용 변경</h1>");
+
+            //get
+            console.log($("#text1").text());
+        }
+        function change2(){
+            // set
+            $("#html1").html("<h1>HTML 내용 변경</h1>");
+
+            //get
+            console.log($("#html1").html());
+        }
+    </script>
+</body>
+</html>

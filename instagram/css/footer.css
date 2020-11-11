@@ -1,0 +1,29 @@
+footer{
+    padding : 50px 15% 0 15%;
+    width : 100%;
+}
+.footer-up{
+    display : flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer-text{
+    font-size: 11px;
+    text-decoration: none;
+    color :  rgb(155, 155, 155);
+}
+.footer-down{
+    padding-top : 17px;
+    display : flex;
+    justify-content: center;
+}
+.down-text{
+    font-size: 11px;
+    text-decoration: none;
+    color :  rgb(155, 155, 155);
+    padding : 0 10px;
+}
+.footer-text:hover{
+    text-decoration: none;
+    color :  rgb(155, 155, 155);
+}

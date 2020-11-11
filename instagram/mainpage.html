@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header__">
+        <div class="main-logo">
+            <a href="#">
+                <img class="logo-size" src="img/logo.png" />
+            </a>
+        </div>
+        <div class="search">
+            <img class="seatch-icon" src="/img/search.png" />
+            <input class="search-box" type="text" autocapitalize="none" placeholder="검색" />
+        </div>
+        <div class="header-icon">
+            <div class="icon-unit">
+                <!-- 위 : 흰바탕 홈 
+                     아래 : 검은바탕 홈 -->
+                <!--<svg aria-label="홈" class="_8-yf5 " fill="#262626" height="23" viewBox="0 0 48 48" width="23">
+                    <path
+                        d="M45.3 48H30c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2-4.6-4.6-4.6s-4.6 2-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.5-.6 2.1 0l21.5 21.5c.4.4.6 1.1.3 1.6 0 .1-.1.1-.1.2v22.8c.1.8-.6 1.5-1.4 1.5zm-13.8-3h12.3V23.4L24 3.6l-20 20V45h12.3V34.2c0-4.3 3.3-7.6 7.6-7.6s7.6 3.3 7.6 7.6V45z">
+                    </path>
+                </svg>-->
+                <a href="#">
+                    <svg aria-label="홈" class="_8-yf5 " fill="#262626" height="23" viewBox="0 0 48 48" width="23">
+                        <path
+                            d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="icon-unit">
+                <!-- 위 : 흰바탕 
+                    아래 : 검은바탕 -->
+                <a href="compass.html">
+                    <svg aria-label="사람 찾기" class="_8-yf5 " fill="#262626" height="23" viewBox="0 0 48 48" width="23">
+                        <path clip-rule="evenodd"
+                            d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z"
+                            fill-rule="evenodd">
+                        </path>
+                    </svg>
+                </a>
+                <!--<svg aria-label="사람 찾기" class="_8-yf5 " fill="#262626" height="23" viewBox="0 0 48 48" width="23">
+                    <path clip-rule="evenodd"
+                        d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm12.2 13.8l-7 14.8c-.1.3-.4.6-.7.7l-14.8 7c-.2.1-.4.1-.6.1-.4 0-.8-.2-1.1-.4-.4-.4-.6-1.1-.3-1.7l7-14.8c.1-.3.4-.6.7-.7l14.8-7c.6-.3 1.3-.2 1.7.3.5.4.6 1.1.3 1.7zm-15 7.4l-5 10.5 10.5-5-5.5-5.5z"
+                        fill-rule="evenodd">
+                    </path>
+                </svg>-->
+            </div>
+            <div class="icon-unit">
+                <button type="button" class="btn pd0" data-toggle="modal" data-target="#myModal">
+                    <svg aria-label="활동 피드" class="_8-yf5 " fill="#262626" height="23" viewBox="0 0 48 48" width="24">
+                        <path
+                            d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="icon-unit">
+                <a href="/profile.html">
+                    <img class="user-icon" src="/img/user.png" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="mainpage">
+            <main>
+                <article class="userbox">
+                    <div class="userbox__user">
+                        <div class="user__img">
+                            <img src="img/cat.jpeg" />
+                        </div>
+                        <div class="user__name">kiki</div>
+                    </div>
+
+                    <div class="userbox__user">
+                        <div class="user__img">
+                            <img src="img/HYUNSIK.png" />
+                        </div>
+                        <div class="user__name">HYUNSIK</div>
+                    </div>
+
+                    <div class="userbox__user">
+                        <div class="user__img">
+                            <img src="img/DANGDANG.png" />
+                        </div>
+                        <div class="user__name">DANGDANG</div>
+                    </div>
+
+                </article>
+
+                <article>
+                    <div class="article__header">
+                        <div class="header__title">
+                            <div class="title__img">
+                                <img src="img/DANGDANG.png" />
+                            </div>
+                            <div class="title__name">DANGDANG</div>
+                        </div>
+                        <div class="header__sub">•••</div>
+                    </div>
+
+                    <div class="article__img">
+                        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="carousel-img" src="img/compass03.jpg" alt="Los Angeles">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="carousel-img" src="img/compass04.jpg" alt="Chicago">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="carousel-img" src="img/compass05.jpg" alt="New York">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="aricle__sub-menu">
+                        <div class="sub-menu__meter">
+                            <ul class="meter__left">
+                                <li> <svg aria-label="좋아요" class="_8-yf5 " fill="#262626" height="24"
+                                        viewBox="0 0 48 48" width="24">
+                                        <path
+                                            d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                                        </path>
+                                    </svg></li>
+                                <li> <svg aria-label="댓글 달기" class="_8-yf5 " fill="#262626" height="24"
+                                        viewBox="0 0 48 48" width="24">
+                                        <path clip-rule="evenodd"
+                                            d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                            fill-rule="evenodd"></path>
+                                    </svg></li>
+                                <li> <svg aria-label="게시물 공유" class="_8-yf5 " fill="#262626" height="24"
+                                        viewBox="0 0 48 48" width="24">
+                                        <path
+                                            d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                                        </path>
+                                    </svg></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu__scroll">◆◇</div>
+                        <div class="sub-menu__meter">
+                            <ul class="meter__right">
+                                <li><svg aria-label="저장" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48"
+                                        width="24">
+                                        <path
+                                            d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                                        </path>
+                                    </svg></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="article__text-box">
+                        <h4>좋아요 3,333개</h4>
+                        <span>yam_cat<sapn> 토낀가 병아린가</sapn></span>
+                        <a href="#" class="twitter-text">댓글 19개 모두보기</a>
+                        <sapn>yubuzzzzz<span> ㅠㅠ천사들</span></sapn>
+                        <a href="#" class="time-text">22시간전</a>
+                    </div>
+                    <div class="article__twitter">
+                        <div class="twitter__input">
+                            <input class="input__design" type="text" placeholder="댓글 달기..." />
+                        </div>
+                        <button class="twitter__button">게시</button>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article__header">
+                        <div class="header__title">
+                            <div class="title__img">
+                                <img src="img/cat.jpeg" />
+                            </div>
+                            <div class="title__name">kiki</div>
+                        </div>
+                        <div class="header__sub">•••</div>
+                    </div>
+
+                    <div class="article__img">
+                        <img src="img/cat.jpeg" />
+                    </div>
+
+                    <div class="aricle__sub-menu">
+                        <div class="sub-menu__meter">
+                            <ul class="meter__left">
+                                <li> <svg aria-label="좋아요" class="_8-yf5 " fill="#262626" height="24"
+                                        viewBox="0 0 48 48" width="24">
+                                        <path
+                                            d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                                        </path>
+                                    </svg></li>
+                                <li> <svg aria-label="댓글 달기" class="_8-yf5 " fill="#262626" height="24"
+                                        viewBox="0 0 48 48" width="24">
+                                        <path clip-rule="evenodd"
+                                            d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                            fill-rule="evenodd"></path>
+                                    </svg></li>
+                                <li> <svg aria-label="게시물 공유" class="_8-yf5 " fill="#262626" height="24"
+                                        viewBox="0 0 48 48" width="24">
+                                        <path
+                                            d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                                        </path>
+                                    </svg></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu__scroll">◆◇</div>
+                        <div class="sub-menu__meter">
+                            <ul class="meter__right">
+                                <li><svg aria-label="저장" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48"
+                                        width="24">
+                                        <path
+                                            d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                                        </path>
+                                    </svg></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="article__text-box">
+                        <h4>좋아요 3,333개</h4>
+                        <span>yam_cat<sapn> 토낀가 병아린가</sapn></span>
+                        <a href="#" class="twitter-text">댓글 19개 모두보기</a>
+                        <sapn>yubuzzzzz<span> ㅠㅠ천사들</span></sapn>
+                        <a href="#" class="time-text">22시간전</a>
+                    </div>
+                    <div class="article__twitter">
+                        <div class="twitter__input">
+                            <input class="input__design" type="text" placeholder="댓글 달기..." />
+                        </div>
+                        <button class="twitter__button">게시</button>
+                    </div>
+                </article>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- Modal body -->
+                            <div class="modal-body pd-t60">
+                                <div class="modal-box">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" height="11%"
+                                        viewBox="0 0 512 512" width="11%" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m437.02 74.98c-48.353-48.351-112.64-74.98-181.02-74.98s-132.667 26.629-181.02 74.98c-48.351 48.353-74.98 112.64-74.98 181.02s26.629 132.667 74.98 181.02c48.353 48.351 112.64 74.98 181.02 74.98s132.667-26.629 181.02-74.98c48.351-48.353 74.98-112.64 74.98-181.02s-26.629-132.667-74.98-181.02zm-181.02 407.02c-124.617 0-226-101.383-226-226s101.383-226 226-226 226 101.383 226 226-101.383 226-226 226z" />
+                                            <path
+                                                d="m395.286 160.242c-16.582-16.582-38.628-25.714-62.078-25.714s-45.497 9.132-62.079 25.714l-15.129 15.129-15.129-15.129c-16.582-16.582-38.628-25.714-62.079-25.714-23.45 0-45.497 9.132-62.078 25.714-16.582 16.582-25.714 38.629-25.714 62.078 0 23.45 9.132 45.497 25.714 62.078l128.68 128.68c2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.464 10.606-4.394l128.68-128.68c16.582-16.581 25.714-38.627 25.714-62.078 0-23.449-9.132-45.496-25.714-62.078zm-21.213 102.944-118.073 118.072-118.073-118.073c-10.916-10.915-16.927-25.428-16.927-40.865s6.011-29.95 16.927-40.865c11.267-11.267 26.066-16.9 40.865-16.9 14.8 0 29.599 5.633 40.866 16.9l25.736 25.736c5.857 5.858 15.355 5.858 21.213 0l25.736-25.736c22.532-22.534 59.197-22.534 81.731 0 10.915 10.916 16.926 25.429 16.926 40.865 0 15.437-6.011 29.95-16.927 40.866z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="modal-box">게시물 활동</div>
+                                <div class="modal-box">다른 사람이 회원님의 게시물을 좋아하거나 댓글을 남기면 여기에 표시됩니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- The Modal -->
+                <footer>
+                    <div class="footer-up">
+                        <a class="footer-text" href="#">소개</a>
+                        <a class="footer-text" href="#">블로그</a>
+                        <a class="footer-text" href="#">채용 정보</a>
+                        <a class="footer-text" href="#">도움말</a>
+                        <a class="footer-text" href="#">API</a>
+                        <a class="footer-text" href="#">개인정보처리방침</a>
+                        <a class="footer-text" href="#">약관</a>
+                        <a class="footer-text" href="#">인기 계정</a>
+                        <a class="footer-text" href="#">해시태그</a>
+                        <a class="footer-text" href="#">위치</a>
+                    </div>
+                    <div class="footer-down">
+                        <a class="footer-text down-text" href="#">한국어</a>
+                        <a class="footer-text down-text" href="#">© 2020 Instagram from Facebook</a>
+                    </div>
+                </footer>
+
+            </main>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

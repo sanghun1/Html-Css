@@ -1,0 +1,125 @@
+/* setting-box */
+
+.setting-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e6e5e5;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5% 20% 5% 10%;
+}
+
+.setting-box .box__profile{
+    display: flex;
+}
+
+.setting-box .box__profile .profile__img{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.setting-box .box__profile .profile__img > img{
+    border: 2px solid gray;
+    border-radius: 50%;
+    width: 40px;
+    cursor: pointer;
+}
+
+.setting-box .box__profile .profile__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.setting-box .box__profile .profile__text > div{
+    font-size: 20px;
+}
+
+/* box__input */
+
+.setting-box .box__input{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    margin: 20px 0 0 0;
+    
+}
+
+.setting-box .box__input .input__name{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.setting-box .box__input .input-detail{
+    height: 100%;
+    width: 70%;
+    
+    
+}
+
+.setting-box .box__input .input-detail > input{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 3px;
+    
+}
+
+/* commend-box */
+.setting-box .box__commend{
+    color: grey;
+    padding-left: 30%;
+    margin: 20px 0 0 0;
+}
+
+.commend__clicker{
+    color: #0095F6;
+    cursor: pointer;
+}
+
+/* check */
+.box__input .check{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    
+}
+
+.box__input .check .check__box{
+    display: flex;
+    align-items: center;
+    
+}
+
+.box__input .check .check__text{
+    font-size: 17px;
+    width: 260px;
+    padding-left: 20px;
+}
+
+/* button-box */
+.setting-box .button-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30px;
+    margin: 50px 0 0 0;
+    
+}
+
+.btn__size{
+    min-width: 60px;
+}
